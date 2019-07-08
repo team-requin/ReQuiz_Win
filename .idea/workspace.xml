@@ -13,22 +13,45 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="185" column="41" lean-forward="true" selection-start-line="185" selection-start-column="41" selection-end-line="185" selection-end-column="41" />
+            <state relative-caret-position="492">
+              <caret line="186" column="24" selection-start-line="186" selection-start-column="24" selection-end-line="186" selection-end-column="24" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#153#356#0" />
-                <element signature="e#393#3906#0" />
-                <element signature="e#3945#3980#0" />
-                <element signature="e#4018#4216#0" />
-                <element signature="e#10220#14215#0" />
-                <element signature="e#14252#14264#0" />
-                <element signature="e#14328#14520#0" />
-                <element signature="e#14552#16921#0" />
-                <element signature="e#16957#17031#0" />
-                <element signature="e#17066#17281#0" />
-                <element signature="e#17317#20697#0" />
-                <element signature="e#16008#16086#0" />
+                <element signature="e#393#3881#0" />
+                <element signature="e#3920#3955#0" />
+                <element signature="e#3993#4191#0" />
+                <element signature="e#10715#14775#0" />
+                <element signature="e#14812#14824#0" />
+                <element signature="e#14889#15081#0" />
+                <element signature="e#15113#17475#0" />
+                <element signature="e#17511#17585#0" />
+                <element signature="e#17620#17835#0" />
+                <element signature="e#17871#21251#0" />
+                <element signature="e#21288#21366#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requiz_read.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-627">
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../auto_create.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -36,9 +59,19 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>modify_btn2_</find>
+      <find>LineEdit_dict_title</find>
+      <find>LineEdit_dict</find>
+      <find>button_plus_w</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -48,13 +81,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/auto_create.py" />
+        <option value="$PROJECT_DIR$/requiz_read.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="980" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
@@ -63,7 +98,17 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ReQuiz_Win" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReQuiz_Win" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -82,7 +127,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="auto_create (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ReQuiz_Win" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../auto_create.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="auto_create" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ReQuiz_Win" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto_create.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ReQuiz_Win" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,9 +191,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="requiz_read" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ReQuiz_Win" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/requiz_read.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.requiz_read" />
+        <item itemvalue="Python.auto_create (1)" />
+        <item itemvalue="Python.auto_create" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +244,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3282123" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39944133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -147,24 +258,44 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/auto_create.py" />
+    <entry file="file://$PROJECT_DIR$/../auto_create.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requiz_read.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-627">
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="185" column="41" lean-forward="true" selection-start-line="185" selection-start-column="41" selection-end-line="185" selection-end-column="41" />
+        <state relative-caret-position="492">
+          <caret line="186" column="24" selection-start-line="186" selection-start-column="24" selection-end-line="186" selection-end-column="24" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#153#356#0" />
-            <element signature="e#393#3906#0" />
-            <element signature="e#3945#3980#0" />
-            <element signature="e#4018#4216#0" />
-            <element signature="e#10220#14215#0" />
-            <element signature="e#14252#14264#0" />
-            <element signature="e#14328#14520#0" />
-            <element signature="e#14552#16921#0" />
-            <element signature="e#16957#17031#0" />
-            <element signature="e#17066#17281#0" />
-            <element signature="e#17317#20697#0" />
-            <element signature="e#16008#16086#0" />
+            <element signature="e#393#3881#0" />
+            <element signature="e#3920#3955#0" />
+            <element signature="e#3993#4191#0" />
+            <element signature="e#10715#14775#0" />
+            <element signature="e#14812#14824#0" />
+            <element signature="e#14889#15081#0" />
+            <element signature="e#15113#17475#0" />
+            <element signature="e#17511#17585#0" />
+            <element signature="e#17620#17835#0" />
+            <element signature="e#17871#21251#0" />
+            <element signature="e#21288#21366#0" />
           </folding>
         </state>
       </provider>
