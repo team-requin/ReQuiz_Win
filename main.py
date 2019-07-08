@@ -244,7 +244,6 @@ class Main_Window(QWidget):
         modify_btn2_5.move(1100, 470)
         modify_btn2_5.show()
 
-
     def func_close(self):
         self.close()
 
