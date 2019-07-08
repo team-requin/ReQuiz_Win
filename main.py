@@ -67,10 +67,10 @@ class Main_Window(QWidget):
         self.LineEdit_search_id.move(370, 450)
 
         # QLineEdit design 설정
-        self.LineEdit_search_id.setPlaceholderText('please enter the ID to search')
+        self.LineEdit_search_id.setPlaceholderText('Please enter the ID to search')
         self.LineEdit_search_id.setStyleSheet("border: 1px solid #ffaef8;"
                                               "border-radius: 10px;"
-                                              "font-size: 25px;")
+                                              "font: 25px Bahnschrift")
 
         # button 선언 및 기본적인 설정
         self.button_search_id = QPushButton('Search', self)
@@ -99,10 +99,12 @@ class Main_Window(QWidget):
                                          "border-radius: 15px;"
                                          "color: white;}")
 
-        self.button_search_id.setStyleSheet("QPushButton:hover{background-color: rgb(0, 0, 0, 40%); border-radius: 15px;}"
-                                            "QPushButton{background-color: #40564e;"
-                                            "border-radius: 15px;"
-                                            "color: white;}")
+        self.button_search_id.setStyleSheet(
+            "QPushButton:hover{background-color: rgb(0, 0, 0, 40%); border-radius: 15px; font: Bahnschrift;}"
+            "QPushButton{background-color: #40564e;"
+            "border-radius: 15px;"
+            "color: white;"
+            "font: Bahnschrift;}")
 
         # 레이아웃 적용z
 
@@ -127,150 +129,78 @@ class Main_Window(QWidget):
         self.profile_label.setPixmap(self.profile_pix)
         self.profile_label.show()
 
-        self.account_line = QLineEdit(self)
-        self.account_line.setStyleSheet('display: block;'
-                                        'margin: 20px auto;'
-                                        'width: 220px;'
-                                        'height: 40px;'
-                                        'line-height: 40px;'
-                                        'padding: 0 10px;'
-                                        'outline: none;'
-                                        'border: 1px solid #b1ffa7;')
-        self.account_line.move(60, 420)
-        self.account_line.show()
+        self.label_myid = QLabel('Id: ', self)
+        self.label_myid.setStyleSheet('border:1px solid; border-color: #6FA893 #6FA893 #968383  #6FA893; font: 30px Bahnschrift;')
+        self.label_myid.move(95, 440)
+        self.label_myid.resize(240, 40)
+        self.label_myid.show()
 
-        self.nickname_line = QLineEdit(self)
-        self.nickname_line.setStyleSheet('display: block;'
-                                         'margin: 20px auto;'
-                                         'width: 220px;'
-                                         'height: 40px;'
-                                         'line-height: 40px;'
-                                         'padding: 0 10px;'
-                                         'outline: none;'
-                                         'border: 1px solid #b1ffa7;')
-        self.nickname_line.move(60, 480)
-        self.nickname_line.show()
+        self.label_myname = QLabel('Name: ', self)
+        self.label_myname.setStyleSheet('border:1px solid; border-color: #6FA893 #6FA893 #968383  #6FA893;; font: 30px Bahnschrift;')
+        self.label_myname.move(95, 500)
+        self.label_myname.resize(240, 40)
+        self.label_myname.show()
 
-        self.blank_label1 = QLabel('제목', self)
-        self.blank_label1.resize(600, 72)
-        self.blank_label1.setStyleSheet("border: 1px solid #b1ffa7;")
-        self.blank_label1.move(450, 150)
-        self.blank_label1.show()
 
-        self.blank_label2 = QLabel('제목', self)
-        self.blank_label2.resize(600, 72)
-        self.blank_label2.setStyleSheet("border: 1px solid #b1ffa7;")
-        self.blank_label2.move(450, 230)
-        self.blank_label2.show()
-
-        self.blank_label3 = QLabel('제목', self)
-        self.blank_label3.resize(600, 72)
-        self.blank_label3.setStyleSheet("border: 1px solid #b1ffa7;")
-        self.blank_label3.move(450, 310)
-        self.blank_label3.show()
-
-        self.blank_label4 = QLabel('제목', self)
-        self.blank_label4.resize(600, 72)
-        self.blank_label4.setStyleSheet("border: 1px solid #b1ffa7;")
-        self.blank_label4.move(450, 390)
-        self.blank_label4.show()
-
-        self.blank_label5 = QLabel('제목', self)
-        self.blank_label5.resize(600, 72)
-        self.blank_label5.setStyleSheet("border: 1px solid #b1ffa7;")
-        self.blank_label5.move(450, 470)
-        self.blank_label5.show()
-
-        self.plus_btn = QPushButton('+플러스', self)
+        self.plus_btn = QPushButton('+', self)
         self.plus_btn.clicked.connect(self.click_plus)
-        self.plus_btn.resize(500, 50)
-        self.plus_btn.setStyleSheet('border: 0;'
+        self.plus_btn.resize(750, 50)
+        self.plus_btn.setStyleSheet('QPushButton{border: 0;'
                                     'display: block;'
-                                    'font-size: 15px;'
-                                    'font-weight: bold;'
+                                    'font-size: 50px;'
+                                    'border-radius: 10px;'
+                                    'background-color: #5dda72;}'
+                                    'QPushButton:hover{border: 0;'
+                                    'display: block;'
+                                    'font-size: 50px;'
                                     'border-radius: 5px;'
-                                    'background-color: #5dda72;')
-        self.plus_btn.move(500, 570)
+                                    'background-color: #61D079;}')
+        self.plus_btn.move(450, 300)
         self.plus_btn.show()
 
-        self.modify_btn = QPushButton('수정', self)
-        self.modify_btn.resize(220, 30)
-        self.modify_btn.setStyleSheet("background-color: #94ff85;"
-                                      "border-radius: 10px;"
-                                      "color: #00791e;"
-                                      )
-        self.modify_btn.move(105, 575)
+        self.modify_btn = QPushButton('회원정보 수정', self)
+        self.modify_btn.resize(260, 35)
+        self.modify_btn.setStyleSheet("QPushButton:hover{background-color: #8DEE88;border_radius: 10px;color: #168235;}"
+                                      "QPushButton{background-color: #94ff85; border-radius: 10px; color: #00791e;}")
+        self.modify_btn.move(87, 570)
         self.modify_btn.show()
 
-        self.modify_btn2_1 = QLabel('수정', self)
-        self.modify_btn2_1.resize(120, 70)
-        self.modify_btn2_1.setStyleSheet("border-radius : 5px;"
-                                         "background-color: #b1ffa7;")
-        self.modify_btn2_1.setAlignment(Qt.AlignCenter)
-        self.modify_btn2_1.move(1100, 150)
-        self.modify_btn2_1.show()
+        self.button_library = QPushButton('First Library', self)
+        self.button_library.resize(600, 72)
+        self.button_library.setStyleSheet("QPushButton{background-color: white; border-radius: 10px; font: 30px Bahnschrift;}"
+                                          "QPushButton:hover{background-color: #cccccc; border-radius: 10px; font: 30px Bahnschrift;}")
+        self.button_library.move(450, 200)
+        self.button_library.show()
+        self.button_library.clicked.connect(self.click_library)
 
-        self.modify_btn2_2 = QLabel('수정', self)
-        self.modify_btn2_2.resize(120, 70)
-        self.modify_btn2_2.setStyleSheet("border-radius : 5px;"
-                                         "background-color: #b1ffa7;")
-        self.modify_btn2_2.setAlignment(Qt.AlignCenter)
-        self.modify_btn2_2.move(1100, 230)
-        self.modify_btn2_2.show()
-
-        self.modify_btn2_3 = QLabel('수정', self)
-        self.modify_btn2_3.resize(120, 70)
-        self.modify_btn2_3.setStyleSheet("border-radius : 5px;"
-                                         "background-color: #b1ffa7;")
-        self.modify_btn2_3.setAlignment(Qt.AlignCenter)
-        self.modify_btn2_3.move(1100, 310)
-        self.modify_btn2_3.show()
-
-        self.modify_btn2_4 = QLabel('수정', self)
-        self.modify_btn2_4.resize(120, 70)
-        self.modify_btn2_4.setStyleSheet("border-radius : 5px;"
-                                         "background-color: #b1ffa7;")
-        self.modify_btn2_4.setAlignment(Qt.AlignCenter)
-        self.modify_btn2_4.move(1100, 390)
-        self.modify_btn2_4.show()
-
-        self.modify_btn2_5 = QLabel('수정', self)
-        self.modify_btn2_5.resize(120, 70)
-        self.modify_btn2_5.setStyleSheet("border-radius : 5px;"
-                                         "background-color: #b1ffa7;")
-        self.modify_btn2_5.setAlignment(Qt.AlignCenter)
-        self.modify_btn2_5.move(1100, 470)
-        self.modify_btn2_5.show()
+        self.modify_btn2 = QPushButton('수정', self)
+        self.modify_btn2.resize(120, 70)
+        self.modify_btn2.setStyleSheet("QPushButton{background-color: #b1ffa7; border-radius: 5px;}"
+                                       "QPushButton:hover{background-color: #A4EEA3; border-radius: 5px;}")
+        self.modify_btn2.move(1070, 200)
+        self.modify_btn2.show()
 
     def click_plus(self):
         self.profile_label.close()
-        self.account_line.close()
-        self.nickname_line.close()
-        self.blank_label1.close()
-        self.blank_label2.close()
-        self.blank_label3.close()
-        self.blank_label4.close()
-        self.blank_label5.close()
+        self.label_myid.close()
+        self.label_myname.close()
+        self.button_library.close()
         self.plus_btn.close()
         self.modify_btn.close()
-        self.modify_btn2_1.close()
-        self.modify_btn2_2.close()
-        self.modify_btn2_3.close()
-        self.modify_btn2_4.close()
-        self.modify_btn2_5.close()
+        self.modify_btn2.close()
 
         self.initUI_write()
 
     def initUI_write(self):
         self.setWindowTitle('Write')
 
-        #QLineEdit 선언 및 기본 설정
+        # QLineEdit 선언 및 기본 설정
         self.LineEdit_dict_title = QLineEdit(self)
         self.LineEdit_dict_question1 = QLineEdit(self)
         self.LineEdit_dict_answer1 = QLineEdit(self)
 
         self.LineEdit_dict_title.resize(600, 50)
-        self.LineEdit_dict_title.move(350, 155)
+        self.LineEdit_dict_title.move(300, 155)
         self.LineEdit_dict_title.setPlaceholderText("Please enter a workbook title")
         self.LineEdit_dict_title.setAlignment(Qt.AlignCenter)
 
@@ -282,10 +212,10 @@ class Main_Window(QWidget):
         self.LineEdit_dict_answer1.move(300, 290)
         self.LineEdit_dict_answer1.setPlaceholderText('Please enter a answer')
 
-        #QLineEdit design 설정
+        # QLineEdit design 설정
         self.LineEdit_dict_title.setStyleSheet('''
                                                border-radius: 10px;
-                                               font: 35px;
+                                               font: 40px Bahnschrift;
                                                ''')
         self.LineEdit_dict_question1.setStyleSheet('''
                                                    border-top-right-radius: 10px;
@@ -304,47 +234,99 @@ class Main_Window(QWidget):
         self.LineEdit_dict_question1.show()
         self.LineEdit_dict_answer1.show()
 
-        #QLabel 선언 및 기본 선언
+        # QLabel 선언 및 기본 선언
         self.label_th_1 = QLabel('1', self)
         self.label_th_1.show()
         self.label_th_1.resize(120, 100)
         self.label_th_1.move(180, 240)
         self.label_th_1.setAlignment(Qt.AlignCenter)
 
-        #QLabel design 설정
+        # QLabel design 설정
         self.label_th_1.setStyleSheet('''
                                       background-color: #648277;
                                       color: white;
-                                      font: 60px;
+                                      font: 60px Bahnschrift;
                                       font-weight: bold;
                                       border-top-left-radius: 10px;
                                       border-bottom-left-radius: 10px;
                                       ''')
         self.label_th_1.show()
 
-        #QpushButton 선언 및 기본적인 설정
-        self.button_plus_word = QPushButton('+플러스', self)
+        # QpushButton 선언 및 기본적인 설정
+        self.button_plus_word = QPushButton('+', self)
         self.button_plus_word.resize(800, 50)
         self.button_plus_word.move(250, 400)
 
-        self.button_create = QPushButton('만들기', self)
+        self.button_create = QPushButton('Create', self)
         self.button_create.resize(120, 60)
-        self.button_create.move(970, 500)
+        self.button_create.move(960, 150)
 
-        #QPushButton design 설정
+        # QPushButton design 설정
         self.button_plus_word.setStyleSheet('''
-                                            QPushButton:hover{border-radius: 10px; background-color: #668A7D;color: white; font: 15px;}
-                                            QPushButton{border-radius: 10px; background-color: #648277;color: white; font: 15px;}
+                                            QPushButton:hover{border-radius: 10px; background-color: #668A7D;color: white; font: 65px; font-weight: bold;}
+                                            QPushButton{border-radius: 10px; background-color: #648277;color: white; font: 65px; font-weight: bold;}
                                             ''')
         self.button_create.setStyleSheet('''
-                                        QPushButton:hover{border-radius: 10px; background-color: #668A7D;color: white; font: 15px;}
-                                        QPushButton{border-radius: 10px; background-color: #648277;color: white; font: 15px;}
+                                        QPushButton:hover{border-radius: 10px; background-color: #668A7D;color: white; font: 25px Bahnschrift;}
+                                        QPushButton{border-radius: 10px; background-color: #648277;color: white; font: 25px Bahnschrift;}
                                         ''')
         self.button_plus_word.show()
         self.button_create.show()
 
+    def click_library(self):
+        self.profile_label.close()
+        self.label_myid.close()
+        self.label_myname.close()
+        self.plus_btn.close()
+        self.modify_btn.close()
+        self.modify_btn2.close()
+        self.button_library.close()
+
+        self.initUI_library()
+
+    def initUI_library(self):
+        self.setWindowTitle('Library')
+
+        # label design 설정
+        self.label_question1 = QLabel('● Requin은 무엇일까요?\t\t\t\t\t\t\t\t\t', self)
+        self.label_question1.move(200, 200)
+
+        self.label_question1.setStyleSheet("color: black;"
+                                 "background-color: #FFFFFF;"
+                                 "border-style: soild;"
+                                 "border-width: 25px;"
+                                 "font-weight: bold;")
+        self.label_question1.show()
+
+
+        self.label_answer1 = QLabel('\t▶ Requin은 대덕소프트웨어마이스터고등학교 5기 학생들이 만든 팀입니다!\t\t\t\t', self)
+        self.label_answer1.move(200, 300)
+        self.label_answer1.setStyleSheet("color: black;"
+                                 "background-color: #FFFFFF;"
+                                 "border-style: soild;"
+                                 "border-width: 25px;"
+                                 "font-weight: bold;")
+
+        self.label_answer1.show()
+
+        self.button_more = QPushButton('더보기', self)
+        self.button_more.resize(500, 50)
+        self.button_more.move(400, 700)
+        self.button_more.setStyleSheet("QPushButton:hover{border-radius: 10px; background-color: #2F9D27;}"
+                              "QPushButton{border-radius: 10px; background-color: #22741C; font: 15px; color: white;"
+                              "font-weight: bold;}")
+        self.button_more.show()
+
+        self.label_picture_white = QLabel(self)
+        pixmap_white = QPixmap('img/requin_white.png')
+        pixmap_white = pixmap_white.scaledToHeight(150)
+        self.label_picture_white.move(570, -15)
+        self.label_picture_white.setPixmap(pixmap_white)
+        self.label_picture_white.show()
+
     def func_signup(self):
         self.close()
+
 
 class Login_Window(QWidget):
 
@@ -357,7 +339,7 @@ class Login_Window(QWidget):
         self.show()
 
     def initUI(self):
-        #QLabel 선언 및 기본적인 설정
+        # QLabel 선언 및 기본적인 설정
         label_background = QLabel('', self)
         label_background.resize(400, 550)
 
@@ -366,12 +348,11 @@ class Login_Window(QWidget):
 
         self.label_image = QLabel(self)
 
-        #QLabel design 설정
+        # QLabel design 설정
         label_background.setStyleSheet("background-color: #7a978d")
         self.label_main.setStyleSheet("font: 70px MS PGothic;")
 
-
-        #QLineEdit 선언 및 기본적인 설정
+        # QLineEdit 선언 및 기본적인 설정
         self.LineEdit_id = QLineEdit(self)
         self.LineEdit_pw = QLineEdit(self)
 
@@ -384,7 +365,7 @@ class Login_Window(QWidget):
         self.LineEdit_pw.setPlaceholderText('Password')
         self.LineEdit_pw.setEchoMode(QLineEdit.Password)
 
-        #QLineEdit design 설정
+        # QLineEdit design 설정
         self.LineEdit_id.setStyleSheet("border-radius: 15px;"
                                        "font: 17px;"
                                        "font-weight: bold;")
@@ -393,7 +374,7 @@ class Login_Window(QWidget):
                                        "font: 17px;"
                                        "font-weight: bold;")
 
-        #QPushButton 선언 및 기본 설정
+        # QPushButton 선언 및 기본 설정
         self.Button_login = QPushButton('login', self)
         self.Button_login.resize(200, 50)
         self.Button_login.move(95, 330)
@@ -403,13 +384,14 @@ class Login_Window(QWidget):
         self.Button_new.move(154, 400)
         self.Button_new.clicked.connect(self.Click_new)
 
-        #QPushButton design 설정
+        # QPushButton design 설정
         self.Button_login.setStyleSheet("QPushButton:hover{border-radius: 15px; background-color: #C9CFCD;}"
                                         "QPushButton{border-radius: 15px; background-color: #DDDDDD; font: 25px; font-weight: bold;}")
-        self.Button_new.setStyleSheet("color: #37573B; background-color: #7a978d; border-width: 1px; border-style: solid;border-color: #7a978d #7a978d #37573B #7a978d;"
-                                      "font: 20px; font-weight: bold;")
+        self.Button_new.setStyleSheet(
+            "color: #37573B; background-color: #7a978d; border-width: 1px; border-style: solid;border-color: #7a978d #7a978d #37573B #7a978d;"
+            "font: 20px; font-weight: bold;")
 
-        #QPixmap 선언 및 기본 설정
+        # QPixmap 선언 및 기본 설정
         self.pixmap_color = QPixmap('img/ReQuiz_logo_black.png')
         self.pixmap_color = self.pixmap_color.scaledToHeight(150)
         self.label_image.move(123, 405)
@@ -517,6 +499,7 @@ class Login_Window(QWidget):
     def func_signup(self):
         self.close()
         QMessageBox.about(self, "Sign up", "Sign up Successful!")
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
