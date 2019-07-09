@@ -10,41 +10,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="113" column="13" lean-forward="true" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+            <state>
+              <caret line="405" column="20" lean-forward="true" selection-end-line="584" selection-end-column="25" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#153#356#0" />
-                <element signature="e#393#3881#0" />
-                <element signature="e#3920#3955#0" />
-                <element signature="e#3993#4191#0" />
-                <element signature="e#4228#7130#0" />
-                <element signature="e#6886#7056#0" />
-                <element signature="e#7206#7687#0" />
-                <element signature="e#7453#11540#0" />
-                <element signature="e#11619#11881#0" />
-                <element signature="e#11577#11589#0" />
-                <element signature="e#11654#11846#0" />
-                <element signature="e#11878#14240#0" />
-                <element signature="e#14276#14350#0" />
-                <element signature="e#14385#14600#0" />
-                <element signature="e#14636#18016#0" />
-                <element signature="e#18053#18131#0" />
+                <element signature="e#364#4420#0" />
+                <element signature="e#4436#4471#0" />
+                <element signature="e#4531#4769#0" />
+                <element signature="e#4744#8353#0" />
+                <element signature="e#8397#8678#0" />
+                <element signature="e#8723#9005#0" />
+                <element signature="e#8472#12979#0" />
+                <element signature="e#13651#13934#0" />
+                <element signature="e#13015#13295#0" />
+                <element signature="e#13333#15383#0" />
+                <element signature="e#16413#16576#0" />
+                <element signature="e#13774#13908#0" />
+                <element signature="e#13938#13992#0" />
+                <element signature="e#13948#13960#0" />
+                <element signature="e#14025#14217#0" />
+                <element signature="e#14249#16550#0" />
+                <element signature="e#16586#16660#0" />
+                <element signature="e#16695#16910#0" />
+                <element signature="e#16946#20326#0" />
+                <element signature="e#20363#20441#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../auto_create.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Documents/ReQuiz_Win_clone/main_clone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+            <state relative-caret-position="393">
+              <caret line="584" column="25" selection-start-line="584" selection-start-column="25" selection-end-line="584" selection-end-column="25" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#153#318#0" />
+                <element signature="e#356#4412#0" />
+                <element signature="e#4451#4486#0" />
+                <element signature="e#4524#4722#0" />
+                <element signature="e#4759#8368#0" />
+                <element signature="e#8412#8693#0" />
+                <element signature="e#8730#9012#0" />
+                <element signature="e#9050#13621#0" />
+                <element signature="e#13666#13949#0" />
+                <element signature="e#13985#14265#0" />
+                <element signature="e#14302#16425#0" />
+                <element signature="e#16469#16624#0" />
+                <element signature="e#16384#16540#0" />
+                <element signature="e#16578#16721#0" />
+                <element signature="e#13948#13960#0" />
+                <element signature="e#14025#14217#0" />
+                <element signature="e#14249#16550#0" />
+                <element signature="e#16586#16660#0" />
+                <element signature="e#16695#16910#0" />
+                <element signature="e#16946#20326#0" />
+                <element signature="e#20363#20441#0" />
               </folding>
             </state>
           </provider>
@@ -62,6 +88,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>click_list_pl</find>
+      <find>click_word</find>
+      <find>click_plus</find>
+      <find>click</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -73,27 +102,41 @@
       <list>
         <option value="$PROJECT_DIR$/asdf.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$USER_HOME$/Documents/ReQuiz_Win_clone/main_clone.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="150" />
-    <option name="y" value="40" />
-    <option name="width" value="980" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="ReQuiz_Win" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\user\Desktop\ReQuiz_Win" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="ReQuiz_Win" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\user\Documents\ReQuiz_Win_clone" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ReQuiz_Win" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReQuiz_Win" type="462c0819:PsiDirectoryNode" />
+              <item name="ReQuiz_Win_clone" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -103,7 +146,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/ReQuiz_Win-master" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/ReQuiz_Win_clone" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -118,27 +161,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="asdf" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ReQuiz_Win" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/asdf.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="auto_create" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ReQuiz_Win" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -181,10 +203,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main_clone" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ReQuiz_Win" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documents/ReQuiz_Win_clone" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Documents/ReQuiz_Win_clone/main_clone.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.asdf" />
+        <item itemvalue="Python.main_clone" />
         <item itemvalue="Python.auto_create" />
       </list>
     </recent_temporary>
@@ -206,7 +249,7 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11624835" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -226,20 +269,11 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/asdf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1558">
-          <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/asdf.py" />
     <entry file="file://$PROJECT_DIR$/../auto_create.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        <state relative-caret-position="323">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -248,26 +282,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="113" column="13" lean-forward="true" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+        <state>
+          <caret line="405" column="20" lean-forward="true" selection-end-line="584" selection-end-column="25" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#153#356#0" />
-            <element signature="e#393#3881#0" />
-            <element signature="e#3920#3955#0" />
-            <element signature="e#3993#4191#0" />
-            <element signature="e#4228#7130#0" />
-            <element signature="e#6886#7056#0" />
-            <element signature="e#7206#7687#0" />
-            <element signature="e#7453#11540#0" />
-            <element signature="e#11619#11881#0" />
-            <element signature="e#11577#11589#0" />
-            <element signature="e#11654#11846#0" />
-            <element signature="e#11878#14240#0" />
-            <element signature="e#14276#14350#0" />
-            <element signature="e#14385#14600#0" />
-            <element signature="e#14636#18016#0" />
-            <element signature="e#18053#18131#0" />
+            <element signature="e#364#4420#0" />
+            <element signature="e#4436#4471#0" />
+            <element signature="e#4531#4769#0" />
+            <element signature="e#4744#8353#0" />
+            <element signature="e#8397#8678#0" />
+            <element signature="e#8723#9005#0" />
+            <element signature="e#8472#12979#0" />
+            <element signature="e#13651#13934#0" />
+            <element signature="e#13015#13295#0" />
+            <element signature="e#13333#15383#0" />
+            <element signature="e#16413#16576#0" />
+            <element signature="e#13774#13908#0" />
+            <element signature="e#13938#13992#0" />
+            <element signature="e#13948#13960#0" />
+            <element signature="e#14025#14217#0" />
+            <element signature="e#14249#16550#0" />
+            <element signature="e#16586#16660#0" />
+            <element signature="e#16695#16910#0" />
+            <element signature="e#16946#20326#0" />
+            <element signature="e#20363#20441#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/ReQuiz_Win_clone/main_clone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="584" column="25" selection-start-line="584" selection-start-column="25" selection-end-line="584" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#153#318#0" />
+            <element signature="e#356#4412#0" />
+            <element signature="e#4451#4486#0" />
+            <element signature="e#4524#4722#0" />
+            <element signature="e#4759#8368#0" />
+            <element signature="e#8412#8693#0" />
+            <element signature="e#8730#9012#0" />
+            <element signature="e#9050#13621#0" />
+            <element signature="e#13666#13949#0" />
+            <element signature="e#13985#14265#0" />
+            <element signature="e#14302#16425#0" />
+            <element signature="e#16469#16624#0" />
+            <element signature="e#16384#16540#0" />
+            <element signature="e#16578#16721#0" />
+            <element signature="e#13948#13960#0" />
+            <element signature="e#14025#14217#0" />
+            <element signature="e#14249#16550#0" />
+            <element signature="e#16586#16660#0" />
+            <element signature="e#16695#16910#0" />
+            <element signature="e#16946#20326#0" />
+            <element signature="e#20363#20441#0" />
           </folding>
         </state>
       </provider>
