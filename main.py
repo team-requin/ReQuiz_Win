@@ -2,6 +2,9 @@ import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.Qt import *
+from PyQt5 import QtCore
+
+
 
 
 class Main_Window(QWidget):
@@ -13,10 +16,7 @@ class Main_Window(QWidget):
         self.setWindowTitle('Requiz')
         self.setFixedSize(1300, 800)
         self.show()
-        QPushButton:hover
-        {
-            QApplication.setOverrideCursor(Qt.WaitCursor)
-        }
+
 
     def initUI(self):
         # label 선언 및 기본적인 설정
@@ -41,7 +41,7 @@ class Main_Window(QWidget):
                                  )
         self.label_main.setStyleSheet("color : white;"
                                       "font:65pt Segoe UI Black;"
-                                 )
+                                      )
 
         # label font 설정
         font1 = self.label_main.font()
@@ -73,8 +73,8 @@ class Main_Window(QWidget):
         # QLineEdit design 설정
         self.LineEdit_search_id.setPlaceholderText('please enter the ID to search')
         self.LineEdit_search_id.setStyleSheet("border: 1px solid #ffaef8;"
-                                         "border-radius: 10px;"
-                                         "font-size: 25px;")
+                                              "border-radius: 10px;"
+                                              "font-size: 25px;")
 
         # button 선언 및 기본적인 설정
         self.button_search_id = QPushButton('Search', self)
@@ -94,19 +94,19 @@ class Main_Window(QWidget):
 
         # button design 설정
         self.button_login.setStyleSheet("QPushButton:hover{background-color: #5d877a; border-radius: 15px;}"
-                                   "QPushButton{background-color: rgb(91, 124, 112);"
-                                   "border-radius: 15px;"
-                                   "color: white;}")
+                                        "QPushButton{background-color: rgb(91, 124, 112);"
+                                        "border-radius: 15px;"
+                                        "color: white;}")
 
         self.button_logout.setStyleSheet("QPushButton:hover{background-color: #5d877a; border-radius: 15px;}"
-                                    "QPushButton{background-color: rgb(91, 124, 112);"
-                                    "border-radius: 15px;"
-                                    "color: white;}")
+                                         "QPushButton{background-color: rgb(91, 124, 112);"
+                                         "border-radius: 15px;"
+                                         "color: white;}")
 
         self.button_search_id.setStyleSheet("QPushButton:hover{background-color: rgb(0, 0, 0, 40%); border-radius: 15px;}"
-                                       "QPushButton{background-color: #40564e;"
-                                       "border-radius: 15px;"
-                                       "color: white;}")
+                                            "QPushButton{background-color: #40564e;"
+                                            "border-radius: 15px;"
+                                            "color: white;}")
 
         # 레이아웃 적용z
 
@@ -212,7 +212,7 @@ class Main_Window(QWidget):
         modify_btn2_1 = QPushButton('수정', self)
         modify_btn2_1.resize(120, 70)
         modify_btn2_1.setStyleSheet("QPushButton{background-color: #b1ffa7; border-radius: 5px;}"
-                                  "QPushButton:hover{background-color: #A4EEA3; border-radius: 5px;}")
+                                    "QPushButton:hover{background-color: #A4EEA3; border-radius: 5px;}")
         modify_btn2_1.move(1100, 150)
         modify_btn2_1.show()
 
@@ -237,15 +237,29 @@ class Main_Window(QWidget):
         modify_btn2_4.move(1100, 390)
         modify_btn2_4.show()
 
-        modify_btn2_5 = QPushButton('수정', self)
-        modify_btn2_5.resize(120, 70)
-        modify_btn2_5.setStyleSheet("QPushButton{background-color: #b1ffa7; border-radius: 5px;}"
-                                    "QPushButton:hover{background-color: #A4EEA3; border-radius: 5px;}")
-        modify_btn2_5.move(1100, 470)
-        modify_btn2_5.show()
+        self.modify_btn2_5 = QPushButton('수정', self)
+        self.modify_btn2_5.resize(120, 70)
+        self.modify_btn2_5.setStyleSheet("QPushButton{background-color: #b1ffa7; border-radius: 5px;}"
+                                         "QPushButton:hover{background-color: #A4EEA3; border-radius: 5px;}")
+        self.modify_btn2_5.move(1100, 470)
+        self.modify_btn2_5.show()
+        self.modify_btn2_5.installEventFilter(self)
+        self.modify_btn2_5.show()
+
 
     def func_close(self):
         self.close()
+
+    def eventFilter(self, object, event):
+        if event.type() == QtCore.QEvent.HoverEnter:
+            print('hovering')
+            QApplication.setOverrideCursor(Qt.PointingHandCursor)
+            return True
+        elif event.type() == QtCore.QEvent.HoverLeave:
+            QApplication.setOverrideCursor(Qt.ArrowCursor)
+            return True
+        #
+        return False
 
 class Login_Window(QWidget):
 
@@ -423,3 +437,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     start = Main_Window()
     sys.exit(app.exec_())
+
