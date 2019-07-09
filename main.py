@@ -111,8 +111,6 @@ class Main_Window(QWidget):
             "border-radius: 15px;"
             "color: black;}")
 
-        # 레이아웃 적용z
-
     def onClick_login(self):
         self.main_to_login = Login_Window()
 
@@ -135,13 +133,13 @@ class Main_Window(QWidget):
         self.profile_label.show()
 
         self.label_myid = QLabel('Id: ', self)
-        self.label_myid.setStyleSheet('border:1px solid; border-color: #6FA893 #6FA893 #968383  #6FA893; font: 30px Bahnschrift;')
+        self.label_myid.setStyleSheet('border:1px solid; border-width: 0px 0px 1px 0px; border-color: #6FA893 #6FA893 #968383  #6FA893; font: 30px Bahnschrift;')
         self.label_myid.move(95, 440)
         self.label_myid.resize(240, 40)
         self.label_myid.show()
 
         self.label_myname = QLabel('Name: ', self)
-        self.label_myname.setStyleSheet('border:1px solid; border-color: #6FA893 #6FA893 #968383  #6FA893; font: 30px Bahnschrift;')
+        self.label_myname.setStyleSheet('border:solid; border-width: 0px 0px 1px 0px; border-color: #6FA893 #6FA893 #968383  #6FA893; font: 30px Bahnschrift;')
         self.label_myname.move(95, 500)
         self.label_myname.resize(240, 40)
         self.label_myname.show()
@@ -224,16 +222,15 @@ class Main_Window(QWidget):
                                                ''')
         self.LineEdit_dict_question1.setStyleSheet('''
                                                    border-top-right-radius: 10px;
-                                                   border: 1px solid #686869;
+                                                   border: 1px solid #596ac9;
                                                    padding-left: 10px;
                                                    font: 25px Bahnschrift;
-                                                   font-weight: bold; 
                                                    ''')
         self.LineEdit_dict_answer1.setStyleSheet('''
                                                  border-bottom-right-radius: 10px;
-                                                 border: 1px solid #686869;
+                                                 border: 1px solid #596ac9;
                                                  padding-left: 10px;
-                                                 font: 25px Bahnschrift;
+                                                 font: 20px Bahnschrift;
                                                  ''')
         self.LineEdit_dict_title.show()
         self.LineEdit_dict_question1.show()
@@ -248,7 +245,7 @@ class Main_Window(QWidget):
 
         # QLabel design 설정
         self.label_th_1.setStyleSheet('''
-                                      background-color: #648277;
+                                      background-color: #596ac9;
                                       color: white;
                                       font: 60px Bahnschrift;
                                       font-weight: bold;
@@ -268,12 +265,12 @@ class Main_Window(QWidget):
 
         # QPushButton design 설정
         self.button_plus_word.setStyleSheet('''
-                                            QPushButton:hover{border-radius: 10px; background-color: #668A7D;color: white; font: 65px; font-weight: bold;}
-                                            QPushButton{border-radius: 10px; background-color: #648277;color: white; font: 65px; font-weight: bold;}
+                                            QPushButton:hover{border-radius: 10px; background-color: #6A83CF;color: white; font: 65px; font-weight: bold;}
+                                            QPushButton{border-radius: 10px; background-color: #596ac9;color: white; font: 65px; font-weight: bold;}
                                             ''')
         self.button_create.setStyleSheet('''
-                                        QPushButton:hover{border-radius: 10px; background-color: #668A7D;color: white; font: 25px Bahnschrift;}
-                                        QPushButton{border-radius: 10px; background-color: #648277;color: white; font: 25px Bahnschrift;}
+                                        QPushButton:hover{border-radius: 10px; background-color: #6A83CF;color: white; font: 25px Bahnschrift;}
+                                        QPushButton{border-radius: 10px; background-color: #596ac9;color: white; font: 25px Bahnschrift;}
                                         ''')
         self.button_plus_word.show()
         self.button_create.show()

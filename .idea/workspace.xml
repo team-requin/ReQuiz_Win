@@ -13,25 +13,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+            <state relative-caret-position="267">
+              <caret line="268" column="108" selection-start-line="268" selection-start-column="108" selection-end-line="268" selection-end-column="108" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#153#356#0" />
-                <element signature="e#393#4184#0" />
-                <element signature="e#3920#3955#0" />
-                <element signature="e#3993#4191#0" />
-                <element signature="e#7203#7455#0" />
-                <element signature="e#7493#11580#0" />
-                <element signature="e#11616#11867#0" />
-                <element signature="e#11904#13623#0" />
-                <element signature="e#13660#13672#0" />
-                <element signature="e#13737#13929#0" />
-                <element signature="e#13961#16323#0" />
-                <element signature="e#16359#16433#0" />
-                <element signature="e#16468#16683#0" />
-                <element signature="e#16719#20099#0" />
-                <element signature="e#20136#20214#0" />
+                <element signature="e#393#4158#0" />
+                <element signature="e#4217#4252#0" />
+                <element signature="e#4271#4479#0" />
+                <element signature="e#4525#7546#0" />
+                <element signature="e#7582#7834#0" />
+                <element signature="e#11995#12246#0" />
+                <element signature="e#12283#14002#0" />
+                <element signature="e#14039#14051#0" />
+                <element signature="e#14116#14308#0" />
+                <element signature="e#14340#16641#0" />
+                <element signature="e#16677#16751#0" />
+                <element signature="e#16786#17001#0" />
+                <element signature="e#17037#20417#0" />
+                <element signature="e#20454#20532#0" />
               </folding>
             </state>
           </provider>
@@ -40,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../auto_create.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+            <state relative-caret-position="323">
+              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -72,14 +72,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/asdf.py" />
+        <option value="$PROJECT_DIR$/../auto_create.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="150" />
-    <option name="y" value="42" />
-    <option name="width" value="978" />
+    <option name="y" value="40" />
+    <option name="width" value="980" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
@@ -93,11 +94,6 @@
             <path>
               <item name="ReQuiz_Win" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReQuiz_Win" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ReQuiz_Win" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReQuiz_Win" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -232,40 +228,40 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/asdf.py" />
-    <entry file="file://$PROJECT_DIR$/../auto_create.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/ReQuiz_header_image.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+        <state relative-caret-position="267">
+          <caret line="268" column="108" selection-start-line="268" selection-start-column="108" selection-end-line="268" selection-end-column="108" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#153#356#0" />
-            <element signature="e#393#4184#0" />
-            <element signature="e#3920#3955#0" />
-            <element signature="e#3993#4191#0" />
-            <element signature="e#7203#7455#0" />
-            <element signature="e#7493#11580#0" />
-            <element signature="e#11616#11867#0" />
-            <element signature="e#11904#13623#0" />
-            <element signature="e#13660#13672#0" />
-            <element signature="e#13737#13929#0" />
-            <element signature="e#13961#16323#0" />
-            <element signature="e#16359#16433#0" />
-            <element signature="e#16468#16683#0" />
-            <element signature="e#16719#20099#0" />
-            <element signature="e#20136#20214#0" />
+            <element signature="e#393#4158#0" />
+            <element signature="e#4217#4252#0" />
+            <element signature="e#4271#4479#0" />
+            <element signature="e#4525#7546#0" />
+            <element signature="e#7582#7834#0" />
+            <element signature="e#11995#12246#0" />
+            <element signature="e#12283#14002#0" />
+            <element signature="e#14039#14051#0" />
+            <element signature="e#14116#14308#0" />
+            <element signature="e#14340#16641#0" />
+            <element signature="e#16677#16751#0" />
+            <element signature="e#16786#17001#0" />
+            <element signature="e#17037#20417#0" />
+            <element signature="e#20454#20532#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../auto_create.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
