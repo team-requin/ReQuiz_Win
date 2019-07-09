@@ -113,7 +113,7 @@ class Main_Window(QWidget):
 
     def click_search(self):
         self.button_search_id.close()
-        self.button_login.close()
+        self.button_login.close() 
         self.LineEdit_search_id.close()
         self.button_logout.close()
         self.label_main.close()
