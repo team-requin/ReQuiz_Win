@@ -34,8 +34,7 @@ class Main_Window(QWidget):
         # label design 설정
         line.setStyleSheet("background-image: url(img/ReQuiz_background_image.png);")
 
-        label_logo.setStyleSheet("background: linear-gradient(to right, #139dba , #397fb3);"
-                                 "color : white;")
+        label_logo.setStyleSheet("color : white;")
         self.label_main.setStyleSheet("color : white;"
                                       "font:65pt Segoe UI Black;")
         self.label_main.show()
@@ -86,7 +85,6 @@ class Main_Window(QWidget):
 
         self.button_search_id.resize(560, 50)
         self.button_search_id.move(370, 500)
-        i = 1
         self.button_search_id.clicked.connect(self.click_search)
 
         self.button_login.resize(100, 50)
@@ -97,15 +95,19 @@ class Main_Window(QWidget):
         self.button_logout.move(1170, 35)
 
         # button design 설정
-        self.button_login.setStyleSheet("QPushButton:hover{background-color: #5d877a; border-radius: 15px;}"
-                                        "QPushButton{background-color: rgb(91, 124, 112);"
+        self.button_login.setStyleSheet("QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 #49b03c); border-radius: 15px; "
+                                        "color: black; font-weight: bold;}"
+                                        "QPushButton{background-color: #9AD392;"
                                         "border-radius: 15px;"
-                                        "color: white;}")
+                                        "font-weight: bold;"
+                                        "color: black;}")
 
-        self.button_logout.setStyleSheet("QPushButton:hover{background-color: #5d877a; border-radius: 15px;}"
-                                         "QPushButton{background-color: rgb(91, 124, 112);"
+        self.button_logout.setStyleSheet("QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 #49b03c); "
+                                         "border-radius: 15px; color: black; font-weight: bold;}"
+                                         "QPushButton{background-color: #9AD392;"
                                          "border-radius: 15px;"
-                                         "color: white;}")
+                                         "font-weight: bold;"
+                                         "color: black;}")
 
         self.button_search_id.setStyleSheet(
             "QPushButton:hover{border:1px solid #7497CF; background-color: #A5E6E4; border-radius: 15px; font: Bahnschrift; font-weight: bold; color: black}"
@@ -154,10 +156,10 @@ class Main_Window(QWidget):
 
         self.back_btn = QPushButton('←', self)
         self.back_btn.resize(120, 70)
-        self.back_btn.move(40, 27)
-        self.back_btn.setStyleSheet("QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 red); border-radius: 10px;"
+        self.back_btn.move(70, 27)
+        self.back_btn.setStyleSheet("QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 #49b03c); border-radius: 10px;"
                                     "font: 80px; font-weight: bold}"
-                                    "QPushButton{background-color: #FF5050; border-radius: 10px; font: 80px; font-weight: bold}")
+                                    "QPushButton{background-color: #9AD392; border-radius: 10px; font: 80px; font-weight: bold}")
         self.back_btn.clicked.connect(self.click_back_in_list)
         self.back_btn.show()
 
@@ -294,7 +296,7 @@ class Main_Window(QWidget):
 
         self.back_btn = QPushButton('←', self)
         self.back_btn.resize(120, 70)
-        self.back_btn.move(40, 27)
+        self.back_btn.move(70, 27)
         self.back_btn.clicked.connect(self.click_back_in_write)
 
         # QPushButton design 설정
@@ -307,9 +309,9 @@ class Main_Window(QWidget):
                                         QPushButton{border-radius: 10px; background-color: #596ac9;color: white; font: 25px Bahnschrift;}
                                         ''')
         self.back_btn.setStyleSheet(
-            "QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 red); border-radius: 10px;"
+            "QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 #49b03c); border-radius: 10px;"
             "font: 80px; font-weight: bold}"
-            "QPushButton{background-color: #FF5050; border-radius: 10px; font: 80px; font-weight: bold}")
+            "QPushButton{background-color: #9AD392; border-radius: 10px; font: 80px; font-weight: bold}")
 
         self.back_btn.show()
         self.button_plus_word.show()
@@ -341,42 +343,43 @@ class Main_Window(QWidget):
         self.setWindowTitle('Library')
 
         # label design 설정
-        self.label_question1 = QLabel('● Requin은 무엇일까요?\t\t\t\t\t\t\t\t\t', self)
-        self.label_question1.move(200, 200)
+        self.label_question1 = QLabel('● Requin은 무엇일까요?', self)
+        self.label_question1.move(250, 200)
+        self.label_question1.resize(800, 55)
 
         self.label_question1.setStyleSheet("color: black;"
+                                           "padding-left: 10px;"
                                            "background-color: #FFFFFF;"
-                                           "border-style: soild;"
-                                           "border-width: 25px;"
-                                           "font-weight: bold;")
+                                           "font-weight: bold;"
+                                           "font: 30px;")
         self.label_question1.show()
 
 
-        self.label_answer1 = QLabel('\t▶ Requin은 대덕소프트웨어마이스터고등학교 5기 학생들이 만든 팀입니다!\t\t\t\t', self)
-        self.label_answer1.move(200, 300)
+        self.label_answer1 = QLabel('▶ Requin은 대덕소프트웨어마이스터고등학교 5기 학생들이 만든 팀입니다!', self)
+        self.label_answer1.move(250, 270)
+        self.label_answer1.resize(800, 55)
         self.label_answer1.setStyleSheet("color: black;"
+                                         "padding-left: 50px;"
                                          "background-color: #FFFFFF;"
-                                         "border-style: soild;"
-                                         "border-width: 25px;"
-                                         "font-weight: bold;")
+                                         "font: 20px;")
         self.label_answer1.show()
 
-        self.button_solve = QPushButton('더보기', self)
+        self.button_solve = QPushButton('문제 풀러 가기', self)
         self.button_solve.resize(500, 50)
-        self.button_solve.move(400, 700)
-        self.button_solve.setStyleSheet("QPushButton:hover{border-radius: 10px; background-color: #2F9D27;}"
-                                        "QPushButton{border-radius: 10px; background-color: #22741C; font: 15px; color: white;"
+        self.button_solve.move(400, 380)
+        self.button_solve.setStyleSheet("QPushButton:hover{border-radius: 10px; background-color: #6A83CF;}"
+                                        "QPushButton{border-radius: 10px; background-color: #596ac9; font: 15px; color: white;"
                                         "font-weight: bold;}")
         self.button_solve.show()
         self.button_solve.clicked.connect(self.click_solve)
 
         self.back_btn = QPushButton('←', self)
         self.back_btn.resize(120, 70)
-        self.back_btn.move(40, 27)
+        self.back_btn.move(70, 27)
         self.back_btn.setStyleSheet(
-            "QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 red); border-radius: 10px;"
+            "QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 #49b03c); border-radius: 10px;"
             "font: 80px; font-weight: bold}"
-            "QPushButton{background-color: #FF5050; border-radius: 10px; font: 80px; font-weight: bold}")
+            "QPushButton{background-color: #9AD392; border-radius: 10px; font: 80px; font-weight: bold}")
         self.back_btn.clicked.connect(self.click_back_in_word)
         self.back_btn.show()
 
@@ -397,10 +400,60 @@ class Main_Window(QWidget):
         self.initUI_solve()
 
     def initUI_solve(self):
-        self.lbl = QLabel('개발 전 페이지 입니다.', self)
-        self.lbl.move(180, 200)
-        self.lbl.setStyleSheet("font: 100px;")
-        self.lbl.show()
+        self.setWindowTitle('Solve')
+
+        #QLabel 기본 선언
+        self.label_question_inSolve = QLabel('문제 내용', self)
+        self.label_question_inSolve.resize(1000, 150)
+        self.label_question_inSolve.move(150, 250)
+        self.label_question_inSolve.setAlignment(Qt.AlignCenter)
+        self.label_question_inSolve.setStyleSheet("padding-left: 60px; font: 70px; font-weight: bold; border: 1px solid black; border-width: 0px 0px 5px 0px")
+        self.label_question_inSolve.show()
+
+        self.label_line_bottom = QLabel('', self)
+        self.label_line_bottom.resize(1000, 150)
+        self.label_line_bottom.move(150, 420)
+        self.label_line_bottom.setStyleSheet("border: 1px solid black; border-width: 0px 0px 5px 0px")
+        self.label_line_bottom.show()
+
+        self.label_Q = QLabel('Q.', self)
+        self.label_Q.move(200, 230)
+        self.label_Q.setStyleSheet("font: 150px; font-weight: bold;")
+        self.label_Q.show()
+
+        #QLineEdit 기본 선언
+        self.LineEdit_answer_inSolve = QLineEdit(self)
+        self.LineEdit_answer_inSolve.resize(800, 60)
+        self.LineEdit_answer_inSolve.move(250, 450)
+        self.LineEdit_answer_inSolve.setAlignment(Qt.AlignCenter)
+        self.LineEdit_answer_inSolve.setPlaceholderText('답을 입력해 주세요.')
+        self.LineEdit_answer_inSolve.setStyleSheet("padding-left: 50px; font: 40px")
+        self.LineEdit_answer_inSolve.show()
+
+        #QPushButton 기본 선언
+        self.button_question_before = QPushButton('Before', self)
+        self.button_question_before.resize(130, 60)
+        self.button_question_before.move(860, 630)
+        self.button_question_before.setStyleSheet(
+            "QPushButton:hover{border-radius: 10px; background-color: #6A83CF; font: 20px; color: white; font-weight: bold;}"
+            "QPushButton{border-radius: 10px; background-color: #596ac9; font: 20px; color: white; font-weight: bold;}")
+        self.button_question_before.show()
+
+        self.button_question_next = QPushButton('Next', self)
+        self.button_question_next.resize(130, 60)
+        self.button_question_next.move(1000, 630)
+        self.button_question_next.setStyleSheet(
+            "QPushButton:hover{border-radius: 10px; background-color: #6A83CF; font: 20px; color: white; font-weight: bold;}"
+            "QPushButton{border-radius: 10px; background-color: #596ac9; font: 20px; color: white; font-weight: bold;}")
+        self.button_question_next.show()
+
+        self.button_question_stop = QPushButton('Stop', self)
+        self.button_question_stop.resize(130, 60)
+        self.button_question_stop.move(180, 630)
+        self.button_question_stop.setStyleSheet(
+            "QPushButton:hover{border-radius: 10px; background-color: #6A83CF; font: 20px; color: white; font-weight: bold;}"
+            "QPushButton{border-radius: 10px; background-color: #596ac9; font: 20px; color: white; font-weight: bold;}")
+        self.button_question_stop.show()
 
     def func_signup(self):
         self.close()
