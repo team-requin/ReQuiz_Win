@@ -175,7 +175,7 @@ class Main_Window(QWidget):
                                     'display: block;'
                                     'border-radius: 30px;'
                                     'font-size: 50px;'
-                                    'background-color: #f0cd35;}')
+                                    'background-color: #f0cd35;}') 
         self.plus_btn.move(720, 290)
         self.plus_btn.show()
 
