@@ -1,4 +1,5 @@
 import sys
+import requests, json
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.Qt import *
@@ -80,8 +81,8 @@ class Main_Window(QWidget):
 
         # button 선언 및 기본적인 설정
         self.button_search_id = QPushButton('Search', self)
-        self.button_login = QPushButton("로그인", self)
-        self.button_logout = QPushButton('로그아웃', self)
+        self.button_login = QPushButton("Log in", self)
+        self.button_logout = QPushButton('Log out', self)
 
         self.button_search_id.resize(560, 50)
         self.button_search_id.move(370, 500)
@@ -95,19 +96,23 @@ class Main_Window(QWidget):
         self.button_logout.move(1170, 35)
 
         # button design 설정
-        self.button_login.setStyleSheet("QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 #49b03c); border-radius: 15px; "
-                                        "color: black; font-weight: bold;}"
-                                        "QPushButton{background-color: #9AD392;"
+        self.button_login.setStyleSheet("QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 #87ff87); "
+                                        "border-radius: 15px;  font-weight: bold; font: 22px Bahnschrift; "
+                                        "color: black;}"
+                                        "QPushButton{background-color: #C1FFC1;"
                                         "border-radius: 15px;"
                                         "font-weight: bold;"
+                                        "font: 22px Bahnschrift;"
                                         "color: black;}")
 
-        self.button_logout.setStyleSheet("QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 #49b03c); "
-                                         "border-radius: 15px; color: black; font-weight: bold;}"
-                                         "QPushButton{background-color: #9AD392;"
-                                         "border-radius: 15px;"
-                                         "font-weight: bold;"
-                                         "color: black;}")
+        self.button_logout.setStyleSheet("QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 #87ff87); "
+                                        "border-radius: 15px;  font-weight: bold; font: 22px Bahnschrift; "
+                                        "color: black;}"
+                                        "QPushButton{background-color: #C1FFC1;"
+                                        "border-radius: 15px;"
+                                        "font-weight: bold;"
+                                        "font: 22px Bahnschrift;"
+                                        "color: black;}")
 
         self.button_search_id.setStyleSheet(
             "QPushButton:hover{border:1px solid #7497CF; background-color: #A5E6E4; border-radius: 15px; font: Bahnschrift; font-weight: bold; color: black}"
@@ -157,48 +162,49 @@ class Main_Window(QWidget):
         self.back_btn = QPushButton('←', self)
         self.back_btn.resize(120, 70)
         self.back_btn.move(70, 27)
-        self.back_btn.setStyleSheet("QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 #49b03c); border-radius: 10px;"
+        self.back_btn.setStyleSheet("QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 #87ff87); border-radius: 10px;"
                                     "font: 80px; font-weight: bold}"
-                                    "QPushButton{background-color: #9AD392; border-radius: 10px; font: 80px; font-weight: bold}")
+                                    "QPushButton{background-color: #C1FFC1; border-radius: 10px; font: 80px; font-weight: bold}")
         self.back_btn.clicked.connect(self.click_back_in_list)
         self.back_btn.show()
 
         self.plus_btn = QPushButton('+', self)
         self.plus_btn.clicked.connect(self.click_write)
-        self.plus_btn.resize(750, 50)
-        self.plus_btn.setStyleSheet('QPushButton{border: 0;'
+        self.plus_btn.resize(60, 60)
+        self.plus_btn.setStyleSheet('QPushButton{'
                                     'display: block;'
                                     'font-size: 50px;'
-                                    'border-radius: 10px;'
-                                    'background-color: #6A83CF;}'
-                                    'QPushButton:hover{border: 0;'
+                                    'color: white;'
+                                    'border-radius: 30px;'
+                                    'background-color: #FEBC01;}'
+                                    'QPushButton:hover{;'
                                     'display: block;'
+                                    'border-radius: 30px;'
                                     'font-size: 50px;'
-                                    'border-radius: 10px;'
-                                    'background-color: #596ac9;}')
-        self.plus_btn.move(450, 300)
+                                    'background-color: #f0cd35;}')
+        self.plus_btn.move(720, 290)
         self.plus_btn.show()
 
-        self.modify_btn = QPushButton('회원정보 수정', self)
+        self.modify_btn = QPushButton('Modify information', self)
         self.modify_btn.resize(260, 35)
         self.modify_btn.setStyleSheet("QPushButton:hover{background-color: #6A83CF;border_radius: 10px;color: white;}"
-                                      "QPushButton{background-color: #596ac9; border-radius: 10px; color: white;}")
+                                      "QPushButton{background-color: #596ac9; font: 17px; font-weight: bold; border-radius: 10px; color: white;}")
         self.modify_btn.move(87, 570)
         self.modify_btn.show()
 
         self.button_library = QPushButton('First Library', self)
-        self.button_library.resize(600, 72)
-        self.button_library.setStyleSheet("QPushButton{background-color: white; border-radius: 10px; font: 30px Bahnschrift;}"
-                                          "QPushButton:hover{background-color: #cccccc; border-radius: 10px; font: 30px Bahnschrift;}")
+        self.button_library.resize(600, 60)
+        self.button_library.setStyleSheet("QPushButton{background-color: white; border-radius: 30px; font: 30px Bahnschrift;}"
+                                          "QPushButton:hover{background-color: #cccccc; border-radius: 30px; font: 30px Bahnschrift;}")
         self.button_library.move(450, 200)
         self.button_library.show()
         self.button_library.clicked.connect(self.click_word)
 
-        self.modify_btn2 = QPushButton('수정', self)
-        self.modify_btn2.resize(120, 70)
-        self.modify_btn2.setStyleSheet("QPushButton{background-color: #596ac9; border-radius: 5px; color: white;}"
-                                       "QPushButton:hover{background-color: #6A83CF; border-radius: 5px; color: white;}")
-        self.modify_btn2.move(1070, 200)
+        self.modify_btn2 = QPushButton('Modify', self)
+        self.modify_btn2.resize(90, 60)
+        self.modify_btn2.setStyleSheet("QPushButton{background-color: #596ac9; border-radius: 30px; color: white; font: 20px Bahnschrift; font-weight: bold;}"
+                                       "QPushButton:hover{background-color: #6A83CF; border-radius: 30px; color: white;}")
+        self.modify_btn2.move(980, 200)
         self.modify_btn2.show()
 
     def click_back_in_list(self):
@@ -309,9 +315,9 @@ class Main_Window(QWidget):
                                         QPushButton{border-radius: 10px; background-color: #596ac9;color: white; font: 25px Bahnschrift;}
                                         ''')
         self.back_btn.setStyleSheet(
-            "QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 #49b03c); border-radius: 10px;"
+            "QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 #87ff87); border-radius: 10px;"
             "font: 80px; font-weight: bold}"
-            "QPushButton{background-color: #9AD392; border-radius: 10px; font: 80px; font-weight: bold}")
+            "QPushButton{background-color: #C1FFC1; border-radius: 10px; font: 80px; font-weight: bold}")
 
         self.back_btn.show()
         self.button_plus_word.show()
@@ -377,9 +383,9 @@ class Main_Window(QWidget):
         self.back_btn.resize(120, 70)
         self.back_btn.move(70, 27)
         self.back_btn.setStyleSheet(
-            "QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 #49b03c); border-radius: 10px;"
+            "QPushButton:hover{background:qradialgradient(cx:1.5, cy:1.0, radius: 2.5, fx:1.5, fy:1.0, stop:0 white, stop:1 #87ff87); border-radius: 10px;"
             "font: 80px; font-weight: bold}"
-            "QPushButton{background-color: #9AD392; border-radius: 10px; font: 80px; font-weight: bold}")
+            "QPushButton{background-color: #C1FFC1; border-radius: 10px; font: 80px; font-weight: bold}")
         self.back_btn.clicked.connect(self.click_back_in_word)
         self.back_btn.show()
 

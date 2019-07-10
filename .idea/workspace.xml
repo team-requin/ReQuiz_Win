@@ -10,63 +10,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="125" lean-forward="true" selection-end-line="637" selection-end-column="25" />
+            <state relative-caret-position="114">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <element signature="e#153#356#0" />
-                <element signature="e#364#4420#0" />
-                <element signature="e#4436#4471#0" />
-                <element signature="e#4531#4769#0" />
-                <element signature="e#4744#8353#0" />
-                <element signature="e#8397#8678#0" />
-                <element signature="e#8723#9005#0" />
-                <element signature="e#8472#12979#0" />
-                <element signature="e#13651#13934#0" />
-                <element signature="e#13015#13295#0" />
-                <element signature="e#16413#16576#0" />
-                <element signature="e#13774#13908#0" />
-                <element signature="e#13948#13960#0" />
-                <element signature="e#14025#14217#0" />
-                <element signature="e#14249#16550#0" />
-                <element signature="e#16586#16660#0" />
-                <element signature="e#16695#16910#0" />
-                <element signature="e#16946#20326#0" />
-                <element signature="e#20363#20441#0" />
+                <element signature="e#153#318#0" />
+                <element signature="e#356#4984#0" />
+                <element signature="e#4752#4787#0" />
+                <element signature="e#4825#5023#0" />
+                <element signature="e#5060#8736#0" />
+                <element signature="e#8780#9061#0" />
+                <element signature="e#9098#9380#0" />
+                <element signature="e#9745#14355#0" />
+                <element signature="e#14038#14321#0" />
+                <element signature="e#14357#14637#0" />
+                <element signature="e#14674#16786#0" />
+                <element signature="e#16830#16985#0" />
+                <element signature="e#17022#17178#0" />
+                <element signature="e#17216#20152#0" />
+                <element signature="e#20189#20201#0" />
+                <element signature="e#20266#20458#0" />
+                <element signature="e#20490#22791#0" />
+                <element signature="e#22827#22901#0" />
+                <element signature="e#22936#23151#0" />
+                <element signature="e#23187#26567#0" />
+                <element signature="e#26604#26682#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/ReQuiz_Win_clone/main_clone.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="393">
-              <caret line="637" column="25" selection-start-line="637" selection-start-column="25" selection-end-line="637" selection-end-column="25" />
+              <caret line="643" column="25" selection-start-line="643" selection-start-column="25" selection-end-line="643" selection-end-column="25" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#153#318#0" />
-                <element signature="e#356#4713#0" />
-                <element signature="e#4752#4787#0" />
-                <element signature="e#4825#5023#0" />
-                <element signature="e#5060#8673#0" />
-                <element signature="e#8717#8998#0" />
-                <element signature="e#9035#9317#0" />
-                <element signature="e#9355#13930#0" />
-                <element signature="e#13975#14258#0" />
-                <element signature="e#14294#14574#0" />
-                <element signature="e#16767#16922#0" />
-                <element signature="e#16959#17115#0" />
-                <element signature="e#13948#13960#0" />
-                <element signature="e#14025#14217#0" />
-                <element signature="e#14249#16550#0" />
-                <element signature="e#16586#16660#0" />
-                <element signature="e#16695#16910#0" />
-                <element signature="e#16946#20326#0" />
-                <element signature="e#20363#20441#0" />
+                <element signature="e#356#4982#0" />
+                <element signature="e#5021#5056#0" />
+                <element signature="e#5094#5292#0" />
+                <element signature="e#5329#9063#0" />
+                <element signature="e#9107#9388#0" />
+                <element signature="e#9425#9707#0" />
+                <element signature="e#9745#14320#0" />
+                <element signature="e#14365#14648#0" />
+                <element signature="e#14684#14964#0" />
+                <element signature="e#15001#17113#0" />
+                <element signature="e#17157#17312#0" />
+                <element signature="e#17349#17505#0" />
+                <element signature="e#17543#20479#0" />
+                <element signature="e#20516#20528#0" />
+                <element signature="e#20593#20785#0" />
+                <element signature="e#20817#23118#0" />
+                <element signature="e#23154#23228#0" />
+                <element signature="e#23263#23478#0" />
+                <element signature="e#23514#26894#0" />
+                <element signature="e#26931#27009#0" />
               </folding>
             </state>
           </provider>
@@ -91,6 +95,8 @@
       <find>button_question_next</find>
       <find>stop</find>
       <find>stop:1</find>
+      <find>fy:1.0, stop:0 white, stop:1</find>
+      <find>stop:</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,8 +113,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="767" />
-    <option name="y" value="92" />
+    <option name="x" value="766" />
+    <option name="y" value="91" />
     <option name="width" value="980" />
     <option name="height" value="1050" />
   </component>
@@ -117,6 +123,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ReQuiz_Win" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReQuiz_Win_clone" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -127,17 +144,6 @@
             <path>
               <item name="ReQuiz_Win" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\user\Documents\ReQuiz_Win_clone" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ReQuiz_Win" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReQuiz_Win_clone" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -250,18 +256,18 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11624835" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11624835" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3282123" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3282123" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39944133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32960895" />
       <window_info anchor="bottom" id="Python Console" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -281,60 +287,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/requests/sessions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="125" lean-forward="true" selection-end-line="637" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#153#356#0" />
-            <element signature="e#364#4420#0" />
-            <element signature="e#4436#4471#0" />
-            <element signature="e#4531#4769#0" />
-            <element signature="e#4744#8353#0" />
-            <element signature="e#8397#8678#0" />
-            <element signature="e#8723#9005#0" />
-            <element signature="e#8472#12979#0" />
-            <element signature="e#13651#13934#0" />
-            <element signature="e#13015#13295#0" />
-            <element signature="e#16413#16576#0" />
-            <element signature="e#13774#13908#0" />
-            <element signature="e#13948#13960#0" />
-            <element signature="e#14025#14217#0" />
-            <element signature="e#14249#16550#0" />
-            <element signature="e#16586#16660#0" />
-            <element signature="e#16695#16910#0" />
-            <element signature="e#16946#20326#0" />
-            <element signature="e#20363#20441#0" />
-          </folding>
+        <state relative-caret-position="151">
+          <caret line="685" selection-start-line="685" selection-end-line="685" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Documents/ReQuiz_Win_clone/main_clone.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
-          <caret line="637" column="25" selection-start-line="637" selection-start-column="25" selection-end-line="637" selection-end-column="25" />
+          <caret line="643" column="25" selection-start-line="643" selection-start-column="25" selection-end-line="643" selection-end-column="25" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#153#318#0" />
-            <element signature="e#356#4713#0" />
+            <element signature="e#356#4982#0" />
+            <element signature="e#5021#5056#0" />
+            <element signature="e#5094#5292#0" />
+            <element signature="e#5329#9063#0" />
+            <element signature="e#9107#9388#0" />
+            <element signature="e#9425#9707#0" />
+            <element signature="e#9745#14320#0" />
+            <element signature="e#14365#14648#0" />
+            <element signature="e#14684#14964#0" />
+            <element signature="e#15001#17113#0" />
+            <element signature="e#17157#17312#0" />
+            <element signature="e#17349#17505#0" />
+            <element signature="e#17543#20479#0" />
+            <element signature="e#20516#20528#0" />
+            <element signature="e#20593#20785#0" />
+            <element signature="e#20817#23118#0" />
+            <element signature="e#23154#23228#0" />
+            <element signature="e#23263#23478#0" />
+            <element signature="e#23514#26894#0" />
+            <element signature="e#26931#27009#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#153#318#0" />
+            <element signature="e#356#4984#0" />
             <element signature="e#4752#4787#0" />
             <element signature="e#4825#5023#0" />
-            <element signature="e#5060#8673#0" />
-            <element signature="e#8717#8998#0" />
-            <element signature="e#9035#9317#0" />
-            <element signature="e#9355#13930#0" />
-            <element signature="e#13975#14258#0" />
-            <element signature="e#14294#14574#0" />
-            <element signature="e#16767#16922#0" />
-            <element signature="e#16959#17115#0" />
-            <element signature="e#13948#13960#0" />
-            <element signature="e#14025#14217#0" />
-            <element signature="e#14249#16550#0" />
-            <element signature="e#16586#16660#0" />
-            <element signature="e#16695#16910#0" />
-            <element signature="e#16946#20326#0" />
-            <element signature="e#20363#20441#0" />
+            <element signature="e#5060#8736#0" />
+            <element signature="e#8780#9061#0" />
+            <element signature="e#9098#9380#0" />
+            <element signature="e#9745#14355#0" />
+            <element signature="e#14038#14321#0" />
+            <element signature="e#14357#14637#0" />
+            <element signature="e#14674#16786#0" />
+            <element signature="e#16830#16985#0" />
+            <element signature="e#17022#17178#0" />
+            <element signature="e#17216#20152#0" />
+            <element signature="e#20189#20201#0" />
+            <element signature="e#20266#20458#0" />
+            <element signature="e#20490#22791#0" />
+            <element signature="e#22827#22901#0" />
+            <element signature="e#22936#23151#0" />
+            <element signature="e#23187#26567#0" />
+            <element signature="e#26604#26682#0" />
           </folding>
         </state>
       </provider>
