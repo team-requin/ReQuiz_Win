@@ -6,7 +6,7 @@ from PyQt5.Qt import *
 
 
 class Main_Window(QWidget):
-
+    gap_in_write = 1
     def __init__(self):
         super().__init__()
         self.initUI_main()
@@ -227,11 +227,6 @@ class Main_Window(QWidget):
 
     def initUI_modify_information(self):
         #QLabel 설정
-        self.label_hello = QLabel('안녕하세요, admin님!!', self)
-        self.label_hello.move(130, 180)
-        self.label_hello.setAlignment(Qt.AlignCenter)
-        self.label_hello.setStyleSheet('font: 40px Bahnschrift; font-weight: bold;')
-        self.label_hello.show()
 
         self.label_id = QLabel('ID', self)
         self.label_id.move(670, 253)
@@ -420,7 +415,6 @@ class Main_Window(QWidget):
 
     def button_modify_complete_click(self):
         QMessageBox.about(self, "message", "Modify successful!!")
-        self.label_hello.close()
         self.label_id.close()
         self.label_nickname.close()
         self.label_pw.close()
@@ -437,7 +431,6 @@ class Main_Window(QWidget):
         self.initUI_list()
 
     def click_back_in_modify(self):
-        self.label_hello.close()
         self.label_id.close()
         self.label_nickname.close()
         self.label_pw.close()
@@ -467,6 +460,7 @@ class Main_Window(QWidget):
 
     def initUI_write(self):
         self.setWindowTitle('Write')
+        Main_Window.gap_in_write = 0
 
         # QLineEdit 선언 및 기본 설정
         self.LineEdit_dict_title = QLineEdit(self)
@@ -508,7 +502,7 @@ class Main_Window(QWidget):
         self.LineEdit_dict_answer1.show()
 
         # QLabel 선언 및 기본 선언
-        self.label_th_1 = QLabel('1', self)
+        self.label_th_1 = QLabel(str(Main_Window.gap_in_write+1), self)
         self.label_th_1.show()
         self.label_th_1.resize(120, 100)
         self.label_th_1.move(180, 240)
@@ -529,6 +523,7 @@ class Main_Window(QWidget):
         self.button_plus_word = QPushButton('More', self)
         self.button_plus_word.resize(800, 50)
         self.button_plus_word.move(250, 400)
+        self.button_plus_word.clicked.connect(self.func_add_word)
 
         self.button_create = QPushButton('Create', self)
         self.button_create.resize(120, 60)
@@ -557,6 +552,52 @@ class Main_Window(QWidget):
 
         self.button_plus_word.show()
         self.button_create.show()
+
+    def func_add_word(self):
+        Main_Window.gap_in_write += 1
+        self.LineEdit_dict_question1 = QLineEdit(self)
+        self.LineEdit_dict_answer1 = QLineEdit(self)
+
+        self.LineEdit_dict_question1.resize(800, 50)
+        self.LineEdit_dict_question1.move(300, 240 + 120*Main_Window.gap_in_write)
+        self.LineEdit_dict_question1.setPlaceholderText('Please enter a question')
+
+        self.LineEdit_dict_answer1.resize(800, 50)
+        self.LineEdit_dict_answer1.move(300, 290 + 120*Main_Window.gap_in_write)
+        self.LineEdit_dict_answer1.setPlaceholderText('Please enter a answer')
+
+        self.label_th_1 = QLabel(str(Main_Window.gap_in_write+1), self)
+        self.label_th_1.resize(120, 100)
+        self.label_th_1.move(180, 240 + 120*Main_Window.gap_in_write)
+        self.label_th_1.setAlignment(Qt.AlignCenter)
+
+        self.LineEdit_dict_question1.setStyleSheet('''
+                                                           border-top-right-radius: 10px;
+                                                           border: 1px solid #596ac9;
+                                                           padding-left: 10px;
+                                                           font: 25px Bahnschrift;
+                                                           ''')
+        self.LineEdit_dict_question1.show()
+        self.LineEdit_dict_answer1.setStyleSheet('''
+                                                         border-bottom-right-radius: 10px;
+                                                         border: 1px solid #596ac9;
+                                                         padding-left: 10px;
+                                                         font: 20px Bahnschrift;
+                                                         ''')
+        self.LineEdit_dict_answer1.show()
+
+        # QLabel design 설정
+        self.label_th_1.setStyleSheet('''
+                                              background-color: #596ac9;
+                                              color: white;
+                                              font: 60px Bahnschrift;
+                                              font-weight: bold;
+                                              border-top-left-radius: 10px;
+                                              border-bottom-left-radius: 10px;
+                                              ''')
+
+        self.button_plus_word.move(250, 400 + 120*Main_Window.gap_in_write)
+        self.label_th_1.show()
 
     def click_create_list(self):
         QMessageBox.about(self, 'Message', 'Complete!!!')
@@ -738,8 +779,64 @@ class Main_Window(QWidget):
 
     def initUI_score(self):
         self.setWindowTitle('Score')
-        self.button = QPushButton('sdf', self)
-        self.button.show()
+
+        self.setWindowTitle('Score')
+        self.label_score_score = QLabel('89', self)
+        self.label_score_score.resize(900, 490)
+        self.label_score_score.move(200, 230)
+        self.label_score_score.setAlignment(Qt.AlignCenter)
+        self.label_score_score.setStyleSheet("background-color: white; color: black; font: 250px; font-weight: bold; border-radius: 15px;")
+        self.label_score_score.show()
+
+        self.label_score_title = QLabel('Test 단어장', self)
+        self.label_score_title.resize(900, 90)
+        self.label_score_title.move(200, 170)
+        self.label_score_title.setAlignment(Qt.AlignCenter)
+        self.label_score_title.setStyleSheet("background-color: #6BA4E8; color: white; font: 50px; font-weight: bold; border-radius: 5px;")
+        self.label_score_title.show()
+
+        self.label_score_description = QLabel('당신의 점수는...', self)
+        self.label_score_description.move(470, 290)
+        self.label_score_description.setStyleSheet("font: 50px; font-weight: bold;")
+        self.label_score_description.show()
+
+        self.button_score_back = QPushButton('돌아가기', self)
+        self.button_score_back.resize(200, 60)
+        self.button_score_back.move(420, 630)
+        self.button_score_back.clicked.connect(self.click_score_back)
+        self.button_score_back.setStyleSheet('''
+                                            QPushButton:hover{border-radius: 10px; background-color: #82b2ff;color: white; font: 30px Bahnschrift; font-weight: bold;}
+                                            QPushButton{border-radius: 10px; background-color: #6BA4E8;color: white; font: 30px Bahnschrift; font-weight: bold;}
+                                            ''')
+        self.button_score_back.show()
+
+        self.button_score_return = QPushButton('다시하기', self)
+        self.button_score_return.resize(200, 60)
+        self.button_score_return.move(680, 630)
+        self.button_score_return.clicked.connect(self.click_score_return)
+        self.button_score_return.setStyleSheet('''
+                                               QPushButton:hover{border-radius: 10px; background-color: #82b2ff;color: white; font: 30px Bahnschrift; font-weight: bold;}
+                                               QPushButton{border-radius: 10px; background-color: #6BA4E8;color: white; font: 30px Bahnschrift; font-weight: bold;}
+                                               ''')
+        self.button_score_return.show()
+
+    def click_score_back(self):
+        self.label_score_description.close()
+        self.label_score_title.close()
+        self.label_score_score.close()
+        self.button_score_back.close()
+        self.button_score_return.close()
+
+        self.initUI_list()
+
+    def click_score_return(self):
+        self.label_score_description.close()
+        self.label_score_title.close()
+        self.label_score_score.close()
+        self.button_score_back.close()
+        self.button_score_return.close()
+
+        self.initUI_word()
 
     def func_signup(self):
         self.close()
